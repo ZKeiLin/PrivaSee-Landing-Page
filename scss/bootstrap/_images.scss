@@ -6,6 +6,7 @@
 // which weren't expecting the images within themselves to be involuntarily resized.
 // See also https://github.com/twbs/bootstrap/issues/18178
 .img-fluid {
+  border-radius: 50%;
   @include img-fluid;
 }
 
