@@ -126,9 +126,12 @@ h1, h2, h3, h4, h5,
   padding: 2.5em 0; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 5em 0; } }
+      padding: 3em 0; 
+    } 
+  }
+  
   .site-section.site-section-sm {
-    padding: 4em 0; }
+    padding: 2em 0; }
 
 .site-section-heading {
   padding-bottom: 20px;
@@ -1868,6 +1871,21 @@ h1, h2, h3, h4, h5,
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 0;
+}
+
+.compareContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* .compare-item {
+  padding-: 3em;
+} */
+
+.copyright {
+  font-size: 0.5em;
+  margin-top: 1rem;
 }
 
 .site-logo {
