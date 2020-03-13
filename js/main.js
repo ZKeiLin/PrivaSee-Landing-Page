@@ -253,10 +253,10 @@ jQuery(document).ready(function($) {
 			wH = $(window).height(),
 			wS = $(this).scrollTop();
 
-		if (wS >= (hT+hH-wH)){
+		if (wS - 40 >= (hT+hH-wH)){
 			setTimeout(function(){
 				odometer.innerHTML = 3920000;
-			}, 900);
+			}, 500);
 			
 			setTimeout(function(){
 				odometer2.innerHTML = 47;
