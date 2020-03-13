@@ -224,6 +224,7 @@ h1, h2, h3, h4, h5,
 @media (max-width: 991.98px) {
   .img-md-fluid {
     max-width: 100%; } }
+    
 
 @media (max-width: 991.98px) {
   .display-1, .display-3 {
@@ -636,7 +637,7 @@ h1, h2, h3, h4, h5,
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 60%;
+  top: 44%;
   -webkit-transform: translateY(-50%) translateX(30%);
   -ms-transform: translateY(-50%) translateX(30%);
   transform: translateY(-50%) translateX(30%); }
@@ -686,6 +687,11 @@ h1, h2, h3, h4, h5,
 
 .bg-light {
   background: #ccc; }
+
+.data-img-2 {
+  margin-left: 15%;
+  width: 88%;
+}
 
 .team-member {
   position: relative;
@@ -855,6 +861,19 @@ h1, h2, h3, h4, h5,
     z-index: 90;
     -webkit-box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1); }
+
+
+.reason-heading {
+  color: black;
+  font-size: 3em;
+}
+
+@media(max-width: 900px) {
+  .reason-heading {
+    color: black;
+    font-size: 3em;
+  }
+}
 
 .post-entry {
   position: relative;
@@ -1028,7 +1047,8 @@ h1, h2, h3, h4, h5,
       position: relative; }
       @media (min-width: 576px) {
         .block-12 .text .text-inner {
-          padding: 20px; } }
+          padding: 20px; }
+        }
       @media (min-width: 768px) {
         .block-12 .text .text-inner {
           padding: 30px 40px; } }
@@ -1853,11 +1873,6 @@ h1, h2, h3, h4, h5,
   margin-bottom: auto;
 }
 
-.reason-heading {
-  color: black;
-  font-size: 4em;
-}
-
 .profile {
   max-width: 250px;
   max-height: 250px;
@@ -1877,11 +1892,24 @@ h1, h2, h3, h4, h5,
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* .compare-item {
-  padding-: 3em;
-} */
+#divider {
+  border-left: 1px solid #6c757d;
+  height: 200px;
+}
+
+@media (max-width:500px) {
+  #divider {
+    height: 0px;
+  }
+}
+
+.compare-item {
+  padding-left: 1em;
+  padding-right: 1em;
+}
 
 .copyright {
   font-size: 0.5em;
@@ -1891,6 +1919,11 @@ h1, h2, h3, h4, h5,
 .site-logo {
   max-width: 200px;
 }
+
+#logo-h3 {
+  margin-top: -0.2em;
+}
+
 @media (max-width: 991.98px) {
   .site-logo {
     top: 0; } }

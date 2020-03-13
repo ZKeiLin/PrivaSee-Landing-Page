@@ -246,11 +246,26 @@ jQuery(document).ready(function($) {
   			$('.js-sticky-header').addClass('shrink');
   		} else {
   			$('.js-sticky-header').removeClass('shrink');
-  		}
+		  }
+		  
+		var hT = $('#odometer').offset().top,
+			hH = $('#odometer').outerHeight(),
+			wH = $(window).height(),
+			wS = $(this).scrollTop();
 
+		if (wS >= (hT+hH-wH)){
+			setTimeout(function(){
+				odometer.innerHTML = 3920000;
+			}, 900);
+			
+			setTimeout(function(){
+				odometer2.innerHTML = 47;
+			}, 900);
+		}
   	}) 
 
   };
+
   siteScroll();
 
 });

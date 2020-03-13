@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
+    <link rel="stylesheet" href="css/odometer-theme-minimal.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -92,7 +93,7 @@
 
             <div class="col-md-12" style="position: relative;" data-aos="fade-up" data-aos-delay="200">
               
-              <img src="images/undraw_investing_7u74.svg" alt="Image" class="img-fluid img-absolute">
+              <img src="images/mockups/mockup-1.png" alt="Image" class="img-fluid img-absolute">
 
               <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="col-lg-6 mr-auto">
@@ -122,16 +123,21 @@
           
           <div class="row align-items-stretch reasonContainer">
               <div class="col-md-6 col-lg-6 mb-4 mb-lg-4 reason" data-aos="fade-up">
-                <div class="reason-heading">$3,920,000</div>
+                <div class="reason-heading">$
+                  <div id="odometer" class="odometer">0000000</div>
+                </div>
                 <div class="reason-body">On average, it would cost $3.92 million for the businesses in the US for a data breach, which will devastate a business in terms of financial cost and company reputation.
                 </div>
               </div>
               <div class="col-md-6 col-lg-6 mb-4 mb-lg-4 reason" data-aos="fade-up">
-                <div class="reason-heading">47%</div>
+                <div class="reason-heading">                  
+                  <div id="odometer2" class="odometer">00</div>%
+                </div>
+                
                 <div class="reason-body">47% of C-Suites believe the main cause of a data breach is employee negligence. However, sometimes it can be hard to detect your employee's online presence.</div>
               </div>
           </div>
-          <div class="mb-5 site-section statement" data-aos="fade-up">
+          <div class="col-6 mb-5 site-section statement" data-aos="fade-up">
             PrivaSee is here to help you obtain a better overview of the public data related to your business, and provide insights for potential data breach and reputation threats.
           </div>
 
@@ -150,10 +156,10 @@
                   <li>Data Visualization</li>
                 </ul>
             </div>
-            <div style="border-left:1px solid #6c757d;height:200px"></div>
+            <div id="divider"></div>
             <div class="compare-item pl-lg-5 pr-lg-5" data-aos="fade-up">
               <div>
-                <h3 class="mb-3"><img class="site-logo" src="./images/logo.png" alt="logo of privaSee"></h3>
+                <h3 id="logo-h3" class="mb-3"><img class="site-logo" src="./images/logo.png" alt="logo of privaSee"></h3>
                 <ul class="ul-check mb-5 list-unstyled success">
                   <li>Data Scanning</li>
                   <li><span class="text-primary">Meaningful </span>Data Visualization</li>
@@ -171,7 +177,8 @@
         <div class="container">
           <div class="row site-section">
             <div class="col-lg-7" data-aos="fade-right">
-              <img src="images/undraw_metrics_gtu7.svg" alt="Image" class="img-fluid">
+              <img src="images/mockups/data-component-1.png" alt="Image" class="img-fluid" data-aos="fade-down">
+              <img src="images/mockups/data-component-2.png" alt="Image" class="img-fluid data-img-2" data-aos="fade-up">
             </div>
             <div class="col-lg-5 pl-lg-5 ml-auto feature-text" data-aos="fade-left">
               <h2 class="text-black">Data Security Scanning</h2>
@@ -326,7 +333,6 @@
       <footer class="footer py-5 text-center">
         <div class="container">
           <div>
-            Thank you for scrolling!
             <a target="_blank" href="https://d2fq5bjgub0x5b.cloudfront.net/login/" class="btn btn-primary mr-2 mb-2">Requset a Demo</a>
           </div>
 
@@ -363,6 +369,7 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
+  <script src="js/odometer.min.js"></script>
 
   
   <script src="js/main.js"></script>
