@@ -274,6 +274,11 @@ h5,
   }
 }
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .bg-image {
   background-size: cover;
   background-position: center center;
